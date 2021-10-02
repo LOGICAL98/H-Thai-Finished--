@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" 
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+    <style>
+        .content-table {
+            border-collapse: collapse;
+            margin: 50px 0;
+            font-size: 0.5cm;
+            min-width: 400px;
+        }  
+        .content-table thead tr {
+            background-color: green;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }    
+        .content-table th,
+        .content-table td {
+            padding: 12px 15px;
+        }
+        .content-table tbody tr {
+            border-bottom: 1px solid grey;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -13,7 +38,7 @@
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="menu.html">Menu</a>
+                <a href="menu.html" class="hightlight">Menu</a>
             </li>
             <li>
                 <a href="about.html">About</a>
@@ -29,7 +54,7 @@
     <main>
         <!-- Your job is to make the menu items in each section below a proper table! -->
         <h1>Appetizers</h1>
-        <table>
+        <table class="content-table">
             <thead>
             <tr>
                 <th>Name</th>
@@ -39,6 +64,7 @@
         <tbody>
         <tr>
             <td>Chicken Satay</td>
+           
             <td>$7.95</td>
         </tr>
         <tr>
@@ -48,7 +74,7 @@
          </tbody>
         </table>
         <h1>Lunch</h1>
-        <table>
+        <table class="content-table">
             <thead>
             <tr>
             <th>Name</th>
@@ -59,10 +85,12 @@
             <tr>
                 <tr>
                 <td>Panang Curry</td>
+                
                 <td>$9.95</td>
             </tr>
             <tr>
                 <td>Red Curry</td>
+                
                 <td>$9.95</td>
             </tr>
             <tr>
@@ -71,17 +99,19 @@
             </tr>
             <tr>
                 <td>Tom Ka Soup</td>
+                <
                 <td>$8.95</td>
             </tr>
             <tr>
                 <td>Tom Yum Soup</td>
+
                 <td>$8.95</td>
             </tr>
         </table>
         <h1>
             Dinner
         </h1>
-        <table>
+        <table class="content-table">
          <tr>
             <th>Name</th>
             <th>Price</th>
@@ -99,7 +129,7 @@
              <td>$10.49</td>
          </tr>
         </table>
-        <table>
+        <table class="content-table">
             <h1>
                 Dessert
             </h1>
@@ -116,7 +146,7 @@
                 <td>$5.99</td>
             </tr>
         </table>
-        <table>
+        <table class="content-table">
             <h1>
                 Beverages
             </h1>
@@ -137,10 +167,10 @@
                 <td>$2.49</td>
             </tr>
         </table>
-        <table>
+        <table class="content-table">
             <h1>Side Orders</h1>
         </table>
-        <table>
+        <table class="content-table">
             <tr>
                 <th>Name</th>
                 <th>Price</th>
@@ -160,5 +190,9 @@
             </tr>
         </table>
     </main>
+    <div id="covid">
+        <h1> Closed due to Covid Restrictions</h1>
+        <p>Our restaurant will be closed to dine in due to Covid </p>
+    </div>
 </body>
 </html>
